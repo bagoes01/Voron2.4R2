@@ -11,17 +11,22 @@ temperature_store_size = 600
 gcode_store_size = 1000
 
 [authorization]
-force_logins = True
+force_logins = False
+default_source = moonraker
 cors_domains = 
 	*.local
 	*.lan
 	*://app.fluidd.xyz
 trusted_clients = 
 	10.0.0.0/8
+	10.8.0.0/24
+	10.104.0.0/20
+	10.15.0.0/16
 	127.0.0.0/8
 	169.254.0.0/16
 	172.16.0.0/12
 	192.168.0.0/16
+	128.199.217.0/24
 	FE80::/10
 	::1/128
 
